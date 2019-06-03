@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.home.view.activity.NewsInfoActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_title" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="标题"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="内容"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_toLeftOf="@+id/news_time"
+        android:text="发布时间:" />
+
+    <TextView
+        android:id="@+id/news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
+        android:text="20190527" />
+</RelativeLayout>

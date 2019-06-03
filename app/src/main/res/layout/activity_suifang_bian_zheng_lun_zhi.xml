@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ExpandableListView
+                android:visibility="gone"
+                android:id="@+id/binazheng_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:groupIndicator="@null"
+                android:background="@color/white"
+                />
+
+
+            <!--<HorizontalScrollView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="2"-->
+            <!--android:scrollbars="none">-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="Suspicious0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/bingzheng_container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/bingzheng_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+                </ScrollView>
+            </LinearLayout>
+
+            <!--</HorizontalScrollView>-->
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginRight="26dp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/menu_list"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="72dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="99dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/bingzheng_arrow"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+</LinearLayout>

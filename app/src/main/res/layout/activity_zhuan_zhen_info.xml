@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.home.view.activity.zhuanzhen.ZhuanZhenInfoActivity">
+
+    <include layout="@layout/common_title" />
+
+    <TextView
+        android:id="@+id/patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="测试患者转诊情况"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/zhuanzhen_info_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

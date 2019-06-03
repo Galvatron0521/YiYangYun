@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:src="@drawable/doting" />
+
+    <TextView
+        android:id="@+id/item_bingzheng_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:text="就诊日期：2018-08-28"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/item_xaizai_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="4dp"
+        android:text="下载报告"
+        android:textColor="#2fd05d" />
+</LinearLayout>

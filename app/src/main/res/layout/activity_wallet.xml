@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/lingqian_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/lingqian" />
+
+        <TextView
+            android:layout_below="@+id/lingqian_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:text="我的零钱"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wallet_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="224dp"
+            android:text="5元"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallet_tv"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="提现"
+            android:background="@drawable/tixian_bg"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

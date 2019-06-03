@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wd.yiyangyun.mvp.patient.view.GradationScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gsv_movie_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.patient.TitileJianbianActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/jb_image"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher_background"/>
+            <LinearLayout
+                android:id="@+id/ll_title_movie_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ff00ff"
+                android:orientation="vertical">
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="10dp"></LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_left_movie_info"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_title_movie_info"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textColor="#00ff00ff"
+                        />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_recyc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.wd.yiyangyun.mvp.patient.view.GradationScrollView>

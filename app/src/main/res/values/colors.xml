@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_color">#28bf50</color>
+    <color name="main_color2">#28bf50</color>
+    <color name="main_text">#43d069</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparency_color">#00000000</color>
+    <color name="item_logo_edit">#33000000</color>
+    <color name="line_color">#f3f3f3</color>
+    <color name="hui">#f5f5f5</color>
+    <color name="text_color">#333333</color>
+
+
+    <color name="un_checkd">#515151</color>
+    <color name="user_title_color1">#51AF85</color>
+    <color name="user_title_color2">#168B77</color>
+    <color name="search_bg_color">#19b9b6b6</color>
+    <color name="item_logo_color">#33000000</color>
+    <color name="delete_bt_color">#ff1122</color>
+    <color name="juhuang">#F19322</color>
+    <color name="fense">#EB6790</color>
+    <color name="qianlan">#0aa2ed</color>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_menulayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:paddingBottom="1dp">
+
+    <LinearLayout
+        android:id="@+id/item_calendar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calendar_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-03-22"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/time_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="时间"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/content_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="每天练习一到科学题"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/status_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="7dp"
+            android:text="已完成"
+            android:visibility="gone"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/item_bingzheng_delete"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@color/delete_bt_color"
+        android:focusable="false"
+        android:text="删除"
+        android:textColor="@android:color/white" />
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+
+

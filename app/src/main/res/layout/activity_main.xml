@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="18dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_right"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/icon_xinxi"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/btb_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tab_img_height="18dp"
+        app:tab_img_width="18dp"
+        app:tab_padding_top="8dp"
+        app:tab_selected_color="@color/main_color"
+        app:tab_unselected_color="#bdb9bd" />
+
+</LinearLayout>
